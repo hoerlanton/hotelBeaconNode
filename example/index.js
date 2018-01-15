@@ -1,6 +1,8 @@
 var MiniBeacon = require('..');
 var async = require('async');
 
+
+
 MiniBeacon.discover(function(device) {
   console.log('got device=%s with distance of %sm', device.uuid, device.accuracy);
 

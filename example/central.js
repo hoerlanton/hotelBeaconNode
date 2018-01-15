@@ -10,6 +10,14 @@ var pizzaCrustCharacteristicUuid = '13333333333333333333333333330001';
 var pizzaToppingsCharacteristicUuid = '13333333333333333333333333330002';
 var pizzaBakeCharacteristicUuid = '13333333333333333333333333330003';
 
+/*
+ var pizzaServiceUuid = '13333333333333333333333333333337';
+ var pizzaCrustCharacteristicUuid = '4c000215e2c56db5dffb48d2b060d0f5a71096e000000000c5';
+ var pizzaToppingsCharacteristicUuid = '59f9bb0e72fa45a390c0a0221a80d678';
+ var pizzaBakeCharacteristicUuid = 'e2c56db5-dffb48d2-b060d0f5-a71096e0';
+ */
+
+
 noble.on('stateChange', function(state) {
     if (state === 'poweredOn') {
         //
@@ -18,7 +26,7 @@ noble.on('stateChange', function(state) {
         // scan for all services (uses more time and power).
         //
         console.log('scanning...');
-        noble.startScanning([pizzaServiceUuid], false);
+        noble.startScanning([], false);
     }
     else {
         noble.stopScanning();
@@ -48,7 +56,7 @@ noble.on('discover', function(peripheral) {
         // Once the peripheral has been connected, then discover the
         // services and characteristics of interest.
         //
-        peripheral.discoverServices([pizzaServiceUuid], function(err, services) {
+        peripheral.discoverServices([], function(err, services) {
             services.forEach(function(service) {
                 //
                 // This must be the service we were looking for.
@@ -96,7 +104,7 @@ noble.on('discover', function(peripheral) {
             })
         })
     })
-})
+});
 
 function bakePizza() {
     //
