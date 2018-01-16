@@ -12,7 +12,7 @@ module.exports = {
         var IBEACON_TYPE = 0x02;
         var EXPECTED_IBEACON_DATA_LENGTH = 0x15;
         var manufacturerData = "";
-        var name = "";
+        var name = [];
 
         noble.on('stateChange', function (state) {
             if (state === 'poweredOn') {
@@ -33,7 +33,7 @@ module.exports = {
             console.log('\t\t' + peripheral.advertisement.localName);
             console.log('\tcan I interest you in any of the following advertised services:');
             console.log('\t\t' + JSON.stringify(peripheral.advertisement.serviceUuids));
-            name = peripheral.advertisement.localName;
+            name.push(peripheral.advertisement.localName);
             var serviceData = peripheral.advertisement.serviceData;
             if (serviceData && serviceData.length) {
                 console.log('\there is my service data:');

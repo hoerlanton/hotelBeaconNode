@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { NobleService } from './noble.service';
+import { nobleData } from '../nobleData';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { NobleService } from './noble.service';
 })
 export class AppComponent {
 
-nobleData: any;
+nobleData: nobleData;
 
   constructor(private nobleService: NobleService) {
 

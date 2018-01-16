@@ -1,13 +1,13 @@
 {
   "name": "minew-minibeacon-project",
   "version": "1.0.0",
-  "description": "node.js lib for Minew's i3 MiniBeacon",
+  "description": "Smart Room Card for Hotels",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oroce/node-minew-minibeacon"
+    "url": "https://github.com/hoerlanton/hotelBeaconNode"
   },
-  "author": "Robert Oroszi <robert@oroszi.net>",
+  "author": "Anton Hoerl",
   "license": "MIT",
   "dependencies": {
     "bleno": "^0.4.2",
@@ -17,12 +17,15 @@
     "cors": "^2.8.4",
     "debug": "~2.6.9",
     "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
     "minew-minibeacon": "^1.0.0",
     "morgan": "~1.9.0",
     "noble": "git://github.com/jacobrosenthal/noble.git#highsierra",
     "noble-device": "^1.0.2",
     "node-gyp": "^3.6.2",
     "nodemon": "^1.11.0",
+    "path": "^0.12.7",
     "pug": "2.0.0-beta11",
     "request": "^2.81.0",
     "serve-favicon": "~2.4.5"
