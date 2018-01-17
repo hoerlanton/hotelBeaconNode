@@ -13,4 +13,15 @@ export class NobleService {
       return this.http.get('noble')
         .map(res => res.json());
     }
+
+
+  getImHausListe() {
+    return this.http.get('imHausListe')
+      .map(res => res.json());
+  }
+
+  getAnreiseListe() {
+    return this.http.get('anreiseListe')
+      .map(res => res.json());
+  }
   }

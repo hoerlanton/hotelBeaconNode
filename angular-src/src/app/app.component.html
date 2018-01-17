@@ -1,7 +1,70 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1>TEST</h1>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--The content below is only a placeholder and can be replaced.-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="<your-libs-directory>/object-assign.min.js"></script>
+</head>
+<flash-messages></flash-messages>
+<body>
+  <nav class="navbar navbar-default" style="max-width: 100%">
+    <ul class="nav navbar-nav" style="max-width: 100%; margin-left: 20px">
+      <li><img alt="Brand" href="http://www.servicio.io" src="http://servicio.io/wp-content/uploads/2016/05/servicio-logo-hellblau-auto-ohne-hintergrund-1.png" style="height: 45px; width: auto; margin-top:15px; margin-right: 50px; text-align: left; display:table-cell; vertical-align:middle;"></li>
+      <li class="anleitung" ><a href="http://servicio.io/tester-info-3-2" style="text-align: left; display:table-cell; vertical-align:middle; margin-bottom: 5px; margin-right: 0px; max-height: 15px" >Anleitung</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="max-width: 100%">
+      <li><img alt="Partner" href="http://www.salzburgerhof.servicio.io/wlanlandingpage" src="http://servicio.io/wp-content/uploads/2017/06/Salzburger-Hof_Marke_CMYK-ohne-hintergrund.png" style="height: 45px; width: auto; margin-top: 10px; margin-bottom: 5px; margin-right: 25px;float: right; text-align: right; display:table-cell; vertical-align:middle;"></li>
+    </ul>
+  </nav>
 
-  <div *ngFor="let nobleDataElements of nobleData;">
-  <h2>{{nobleDataElements}}</h2>
-</div>
 
+  <div class="col-xs-12 col-lg-4 upload-col">
+    <div class="csv"  style=" width: 100%; height: 100px;"><h3>CSV-Datei hochladen</h3>
+      <div class="line"></div>
+      <form class="SendMessage" (submit)="sendMessage($event)">
+        <input type="file" style="float: left; margin-top: 10px; color: #0a7a74" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+        <button style=" background-color: #0a7a74; float: right; color:  white" type="button" class="btn btn-send" (click)="upload()">CSV HOCHLADEN</button>
+      </form>
+    </div>
+    <h3>Anreise-Liste</h3>
+    <div class="row1">
+      <div class='wrapper'>
+        <div *ngFor="let anreiseListeElement of anreiseListeElemente">
+          <div class='cards-container' id='container1'>
+            <div class="card" id="card2" [ngStyle]="{'background-color': '#' + anreiseListeElement.bgColor}">
+              <p> <b>Name:</b> {{anreiseListeElement.name}}<br>
+                <b>Zimmernummer:</b> {{anreiseListeElement.zimmernummer}}<br>
+                <b>Abreise:</b> {{anreiseListeElement.abreise}}<br>
+                <b>Personen Anzahl:</b> {{anreiseListeElement.personenAnzahl}}<br>
+                <b>Notiz1:</b> {{anreiseListeElement.notiz1}}<br>
+                <b>Notiz2:</b> {{anreiseListeElement.notiz2}}<br>
+                <b>Bemerkung:</b> {{anreiseListeElement.bemerkung}}<br>
+              </p>
+              <div *ngIf="anreiseListeElement.bgColor === '0a7a74'">
+                <i class="fa fa-check" style="float: right; color: white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-lg-8 data-col">
+    <div class="row1">
+      <div class='wrapper'>
+        <div class="card" *ngFor="let nobleDataElements of nobleData;" [ngStyle]="{'border': + nobleDataElements.border}">
+          <div class='cards-container' id='container2'>
+            <h3 style="color: black">{{nobleDataElements.roomNumber}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
