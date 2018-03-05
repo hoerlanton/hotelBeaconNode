@@ -28,19 +28,6 @@ interval: any;
 
   constructor(private nobleService: NobleService, private http: Http,  private _flashMessagesService: FlashMessagesService) {
 
-
-    this.refreshData();
-  }
-
-  ngOnInit() {
-    this.refreshData();
-    this.interval = setInterval(() => {
-      this.refreshData();
-    }, 1000);
-  }
-
-  refreshData() {
-
     this.nobleService.getImHausListe()
       .subscribe(imHausListeElemente => {
         //console.log('IM-HAUS-LISTE before:');
@@ -55,6 +42,20 @@ interval: any;
         this.anreiseListeElemente = anreiseListeElemente;
         console.log(this.anreiseListeElemente);
       });
+
+    this.refreshData();
+  }
+
+  ngOnInit() {
+    this.refreshData();
+    this.interval = setInterval(() => {
+      this.refreshData();
+    }, 1000);
+  }
+
+  refreshData() {
+
+
 
 
     this.nobleService.getNobleData()
@@ -85,14 +86,15 @@ interval: any;
         }
         console.log('noble:');
         console.log(this.nobleData);
-
+      if(this.nobleData && this.anreiseListeElemente) {
         for (let a = 0; a < this.nobleData.length; a++) {
           for (let b = 0; b < this.anreiseListeElemente.length; b++) {
             if (this.nobleData[a].roomNumber === this.anreiseListeElemente[b].zimmernummer) {
-              this.nobleData[a].roomNumber += " | " + this.anreiseListeElemente[b].name + " | " + this.anreiseListeElemente[b].abreise + " | " +  this.anreiseListeElemente[b].personenAnzahl + " | " +  this.anreiseListeElemente[b].notiz2;
+              this.nobleData[a].roomNumber += " | " + this.anreiseListeElemente[b].name + " | " + this.anreiseListeElemente[b].abreise + " | " + this.anreiseListeElemente[b].personenAnzahl + " | " + this.anreiseListeElemente[b].notiz2;
             }
           }
         }
+      }
       });
   }
 

@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "html, body {\n  padding: 0;\n  margin: 0;\n  height: 100%;\n  background-color: #0a7a74;\n}\n\n.row {\n  height: 100%;\n}\n\nhtml, body {\n  padding: 0;\n  margin: 0;\n  height: 100%;\n  background-color: #0a7a74;\n}\n\n.row {\n  height: 100%;\n}\n\n.data-col {\n  background-color: #0a7a74;\n}\n\n.upload-col {\n  background-color: #f3efe4;\n  padding: 20px 10px 20px 10px;\n  border-left: 5px solid #0a7a74;\n  border-right: 5px solid #0a7a74;\n  border-bottom: 20px solid #0a7a74;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  min-height: 100vh;\n  max-height: 100vh;\n  overflow: auto;\n}\n\n.line{\n  width: 100%;\n  height: 20px;\n  border-bottom: solid 10px #0a7a74;\n  position: absolute;\n  right: 0px;\n  top: 100px;\n}\n\n.row1 {\n  height: calc(100vh);\n  overflow: auto;\n}\n\n.cards-container {\n  margin: 10px 0px 10px 0px;\n  padding: 10px 10px 40px 10px;\n}\n\n.row .container-fluid .col-md-4 .row1 .wrapper {\n  overflow: auto;\n  margin: 0 0 0 0;\n  display: inline-block;\n  max-width: 100%;\n  height: calc(100vh - 100px);\n}\n\n.row .container-fluid .table-col .inner-table .row3 .wrapper .cards-container {\n  border-radius: 3px;\n  border: solid 1px grey;\n  padding: 10px 10px 15px 10px;\n}\n\n.card {\n  background: rgb(255,255,255); /* Fall-back for browsers that don support rgba */\n  background: rgba(255,255,255, 1);\n  border-radius: 3px;\n  border: solid 1px grey;\n  padding: 10px 10px 15px 10px;\n}\n", ""]);
+exports.push([module.i, "html, body {\n  padding: 0;\n  margin: 0;\n  height: 100%;\n  background-color: #0a7a74;\n}\n\n.row {\n  height: 100%;\n}\n\nhtml, body {\n  padding: 0;\n  margin: 0;\n  height: 100%;\n  background-color: #0a7a74;\n}\n\n.row {\n  height: 100%;\n}\n\n.data-col {\n  background-color: #0a7a74;\n}\n\n.upload-col {\n  background-color: #f3efe4;\n  padding: 20px 10px 20px 10px;\n  border-left: 5px solid #0a7a74;\n  border-right: 5px solid #0a7a74;\n  border-bottom: 20px solid #0a7a74;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  min-height: 100vh;\n  max-height: 100vh;\n  overflow: auto;\n}\n\n.line{\n  width: 100%;\n  height: 20px;\n  border-bottom: solid 10px #0a7a74;\n  position: absolute;\n  right: 0px;\n  top: 140px;\n}\n\n.row1 {\n  height: calc(100vh);\n}\n\n.cards-container {\n  margin: 10px 0px 10px 0px;\n  padding: 10px 10px 40px 10px;\n}\n\n.wrapper {\n  overflow: auto;\n  margin: 0 0 0 0;\n  display: inline-block;\n  max-width: 100%;\n  height: calc(100vh - 100px);\n}\n\n.row .container-fluid .table-col .inner-table .row3 .wrapper .cards-container {\n  border-radius: 3px;\n  border: solid 1px grey;\n  padding: 10px 10px 15px 10px;\n}\n\n.card {\n  background: rgb(255,255,255); /* Fall-back for browsers that don support rgba */\n  background: rgba(255,255,255, 1);\n  border-radius: 3px;\n  border: solid 1px grey;\n  padding: 10px 10px 15px 10px;\n}\n", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<html>\n<head>\n  <title>Dashboard</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n  <!--The content below is only a placeholder and can be replaced.-->\n  <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n  <link href=\"https://unpkg.com/@angular/material/prebuilt-themes/indigo-pink.css\" rel=\"stylesheet\">\n  <script src=\"node_modules/core-js/client/shim.min.js\"></script>\n  <script src=\"<your-libs-directory>/object-assign.min.js\"></script>\n</head>\n<flash-messages></flash-messages>\n<body>\n  <nav class=\"navbar navbar-default\" style=\"max-width: 100%\">\n    <ul class=\"nav navbar-nav\" style=\"max-width: 100%; margin-left: 20px\">\n      <li><img alt=\"Brand\" href=\"http://www.servicio.io\" src=\"http://servicio.io/wp-content/uploads/2016/05/servicio-logo-hellblau-auto-ohne-hintergrund-1.png\" style=\"height: 45px; width: auto; margin-top:15px; margin-right: 50px; text-align: left; display:table-cell; vertical-align:middle;\"></li>\n      <li class=\"anleitung\" ><a href=\"http://servicio.io/tester-info-3-2\" style=\"text-align: left; display:table-cell; vertical-align:middle; margin-bottom: 5px; margin-right: 0px; max-height: 15px\" >Anleitung</a></li>\n    </ul>\n    <ul class=\"nav navbar-nav navbar-right\" style=\"max-width: 100%\">\n      <li><img alt=\"Partner\" href=\"http://www.salzburgerhof.servicio.io/wlanlandingpage\" src=\"http://servicio.io/wp-content/uploads/2017/06/Salzburger-Hof_Marke_CMYK-ohne-hintergrund.png\" style=\"height: 45px; width: auto; margin-top: 10px; margin-bottom: 5px; margin-right: 25px;float: right; text-align: right; display:table-cell; vertical-align:middle;\"></li>\n    </ul>\n  </nav>\n\n\n  <div class=\"col-xs-12 col-lg-4 upload-col\">\n    <div class=\"csv\"  style=\" width: 100%; height: 100px;\"><h3>CSV-Datei hochladen</h3>\n      <div class=\"line\"></div>\n      <form class=\"SendMessage\" (submit)=\"sendMessage($event)\">\n        <input type=\"file\" style=\"float: left; margin-top: 10px; color: #0a7a74\" (change)=\"fileChangeEvent($event)\" placeholder=\"Upload file...\" />\n        <button style=\" background-color: #0a7a74; float: right; color:  white\" type=\"button\" class=\"btn btn-send\" (click)=\"upload()\">CSV HOCHLADEN</button>\n      </form>\n    </div>\n    <h3>Anreise-Liste</h3>\n    <div class=\"row1\">\n      <div class='wrapper'>\n        <div *ngFor=\"let anreiseListeElement of anreiseListeElemente\">\n          <div class='cards-container' id='container1'>\n            <div class=\"card\" id=\"card2\" [ngStyle]=\"{'background-color': '#' + anreiseListeElement.bgColor}\">\n              <p> <b>Name:</b> {{anreiseListeElement.name}}<br>\n                <b>Zimmernummer:</b> {{anreiseListeElement.zimmernummer}}<br>\n                <b>Abreise:</b> {{anreiseListeElement.abreise}}<br>\n                <b>Personen Anzahl:</b> {{anreiseListeElement.personenAnzahl}}<br>\n                <b>Notiz1:</b> {{anreiseListeElement.notiz1}}<br>\n                <b>Notiz2:</b> {{anreiseListeElement.notiz2}}<br>\n                <b>Bemerkung:</b> {{anreiseListeElement.bemerkung}}<br>\n              </p>\n              <div *ngIf=\"anreiseListeElement.bgColor === '0a7a74'\">\n                <i class=\"fa fa-check\" style=\"float: right; color: white\"></i>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-12 col-lg-8 data-col\">\n    <div class=\"row1\">\n      <div class='wrapper'>\n        <div class=\"card\" *ngFor=\"let nobleDataElements of nobleData;\" [ngStyle]=\"{'border': + nobleDataElements.border}\">\n          <div class='cards-container' id='container2'>\n            <h3 style=\"color: black\">{{nobleDataElements.roomNumber}}</h3>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</body>\n\n</html>\n"
+module.exports = "<html>\n<head>\n  <title>Dashboard</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n  <!--The content below is only a placeholder and can be replaced.-->\n  <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n  <link href=\"https://unpkg.com/@angular/material/prebuilt-themes/indigo-pink.css\" rel=\"stylesheet\">\n  <script src=\"node_modules/core-js/client/shim.min.js\"></script>\n  <script src=\"<your-libs-directory>/object-assign.min.js\"></script>\n</head>\n<flash-messages></flash-messages>\n<body>\n  <nav class=\"navbar navbar-default\" style=\"max-width: 100%\">\n    <ul class=\"nav navbar-nav\" style=\"max-width: 100%; margin-left: 20px\">\n      <li><img alt=\"Brand\" href=\"http://www.servicio.io\" src=\"http://servicio.io/wp-content/uploads/2016/05/servicio-logo-hellblau-auto-ohne-hintergrund-1.png\" style=\"height: 45px; width: auto; margin-top:15px; margin-right: 50px; text-align: left; display:table-cell; vertical-align:middle;\"></li>\n    </ul>\n    <ul class=\"nav navbar-nav navbar-right\" style=\"max-width: 100%\">\n      <li><img alt=\"Partner\" href=\"http://www.salzburgerhof.servicio.io/wlanlandingpage\" src=\"http://servicio.io/wp-content/uploads/2017/06/Salzburger-Hof_Marke_CMYK-ohne-hintergrund.png\" style=\"height: 45px; width: auto; margin-top: 10px; margin-bottom: 5px; margin-right: 25px;float: right; text-align: right; display:table-cell; vertical-align:middle;\"></li>\n    </ul>\n  </nav>\n\n\n  <div class=\"col-xs-12 col-lg-4 upload-col\">\n    <div class=\"csv\"  style=\" width: 100%; height: 100px;\"><h3>CSV-Datei hochladen</h3>\n      <div class=\"line\"></div>\n      <form class=\"SendMessage\" (submit)=\"sendMessage($event)\">\n        <input type=\"file\" style=\"float: left; margin-top: 10px; color: #0a7a74\" (change)=\"fileChangeEvent($event)\" placeholder=\"Upload file...\" />\n        <button style=\" background-color: #0a7a74; float: right; color:  white\" type=\"button\" class=\"btn btn-send\" (click)=\"upload()\">CSV HOCHLADEN</button>\n      </form>\n    </div>\n    <h3>Anreise-Liste</h3>\n    <div class=\"row1\">\n      <div class='wrapper'>\n        <div *ngFor=\"let anreiseListeElement of anreiseListeElemente\">\n          <div class='cards-container' id='container1'>\n            <div class=\"card\" id=\"card2\" [ngStyle]=\"{'background-color': '#' + anreiseListeElement.bgColor}\">\n              <p> <b>Name:</b> {{anreiseListeElement.name}}<br>\n                <b>Zimmernummer:</b> {{anreiseListeElement.zimmernummer}}<br>\n                <b>Abreise:</b> {{anreiseListeElement.abreise}}<br>\n                <b>Personen Anzahl:</b> {{anreiseListeElement.personenAnzahl}}<br>\n                <b>Notiz1:</b> {{anreiseListeElement.notiz1}}<br>\n                <b>Notiz2:</b> {{anreiseListeElement.notiz2}}<br>\n                <b>Bemerkung:</b> {{anreiseListeElement.bemerkung}}<br>\n              </p>\n              <div *ngIf=\"anreiseListeElement.bgColor === '0a7a74'\">\n                <i class=\"fa fa-check\" style=\"float: right; color: white\"></i>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-12 col-lg-8 data-col\">\n    <div class=\"row1\">\n      <div class='wrapper'>\n        <div class=\"card\" *ngFor=\"let nobleDataElements of nobleData;\" [ngStyle]=\"{'border': + nobleDataElements.border}\">\n          <div class='cards-container' id='container2'>\n            <h3 style=\"color: black\">{{nobleDataElements.roomNumber}}</h3>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</body>\n\n</html>\n"
 
 /***/ }),
 
@@ -69,6 +69,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = /** @class */ (function () {
     function AppComponent(nobleService, http, _flashMessagesService) {
+        var _this = this;
         this.nobleService = nobleService;
         this.http = http;
         this._flashMessagesService = _flashMessagesService;
@@ -76,17 +77,6 @@ var AppComponent = /** @class */ (function () {
         this.nobleDataRaw = [];
         this.nobleDataFiltered = [];
         this.filesToUpload = [];
-        this.refreshData();
-    }
-    AppComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.refreshData();
-        this.interval = setInterval(function () {
-            _this.refreshData();
-        }, 1000);
-    };
-    AppComponent.prototype.refreshData = function () {
-        var _this = this;
         this.nobleService.getImHausListe()
             .subscribe(function (imHausListeElemente) {
             //console.log('IM-HAUS-LISTE before:');
@@ -100,6 +90,17 @@ var AppComponent = /** @class */ (function () {
             _this.anreiseListeElemente = anreiseListeElemente;
             console.log(_this.anreiseListeElemente);
         });
+        this.refreshData();
+    }
+    AppComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.refreshData();
+        this.interval = setInterval(function () {
+            _this.refreshData();
+        }, 1000);
+    };
+    AppComponent.prototype.refreshData = function () {
+        var _this = this;
         this.nobleService.getNobleData()
             .subscribe(function (noble) {
             console.log(noble);
@@ -120,10 +121,12 @@ var AppComponent = /** @class */ (function () {
             }
             console.log('noble:');
             console.log(_this.nobleData);
-            for (var a = 0; a < _this.nobleData.length; a++) {
-                for (var b = 0; b < _this.anreiseListeElemente.length; b++) {
-                    if (_this.nobleData[a].roomNumber === _this.anreiseListeElemente[b].zimmernummer) {
-                        _this.nobleData[a].roomNumber += " | " + _this.anreiseListeElemente[b].name + " | " + _this.anreiseListeElemente[b].abreise + " | " + _this.anreiseListeElemente[b].personenAnzahl + " | " + _this.anreiseListeElemente[b].notiz2;
+            if (_this.nobleData && _this.anreiseListeElemente) {
+                for (var a = 0; a < _this.nobleData.length; a++) {
+                    for (var b = 0; b < _this.anreiseListeElemente.length; b++) {
+                        if (_this.nobleData[a].roomNumber === _this.anreiseListeElemente[b].zimmernummer) {
+                            _this.nobleData[a].roomNumber += " | " + _this.anreiseListeElemente[b].name + " | " + _this.anreiseListeElemente[b].abreise + " | " + _this.anreiseListeElemente[b].personenAnzahl + " | " + _this.anreiseListeElemente[b].notiz2;
+                        }
                     }
                 }
             }

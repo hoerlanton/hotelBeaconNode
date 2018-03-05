@@ -42,12 +42,11 @@ html, body {
   border-bottom: solid 10px #0a7a74;
   position: absolute;
   right: 0px;
-  top: 100px;
+  top: 140px;
 }
 
 .row1 {
   height: calc(100vh);
-  overflow: auto;
 }
 
 .cards-container {
@@ -55,7 +54,7 @@ html, body {
   padding: 10px 10px 40px 10px;
 }
 
-.row .container-fluid .col-md-4 .row1 .wrapper {
+.wrapper {
   overflow: auto;
   margin: 0 0 0 0;
   display: inline-block;
